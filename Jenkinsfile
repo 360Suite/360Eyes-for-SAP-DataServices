@@ -11,7 +11,6 @@ node {
 		}
 	} catch (e) {
 		echo("***** Job failed - check logs *****")
-		jobFailed();
 		throw(e);
 	} finally {
 		archiveReports();
